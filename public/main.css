@@ -1,16 +1,16 @@
 @font-face{
   font-family:"headingNowTitular";
-  src: url(/headingNowFonts/HeadingNowTrial-25Medium.ttf) format('truetype');
+  src: url(./headingNowFonts/HeadingNowTrial-25Medium.ttf) format('truetype');
 }
 
 @font-face {
   font-family: "MontserratMedium";
-  src: url(/montserratFonts/Montserrat-Medium.otf) format('opentype');
+  src: url(./montserratFonts/Montserrat-Medium.otf) format('opentype');
 }
 
 @font-face {
   font-family: "Montserratbold";
-  src: url(./assets/montserratFonts/Montserrat-Bold.otf) format('opentype');
+  src: url(./montserratFonts/Montserrat-Bold.otf) format('opentype');
 }
 
 body {
