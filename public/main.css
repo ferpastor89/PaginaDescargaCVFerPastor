@@ -151,20 +151,16 @@ h3 {
   margin-bottom: 5vh;
 }
 
-button {
-  width: 50%;
+#downloadBtn {
+  width: 45%;
   margin-top: 6%;
-  padding: 2.5rem 1.5rem;
-  font-size: 1rem;
+  padding: 3rem 3rem;
+  font-size: 2.5em;
   background-color: #4CAF50;
   color: #fff;
-  border-radius: 2rem;
+  border-radius: 2.5rem;
 }
 
-.btnDescargaCv h2 {
-  font-size: 2.7rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 .icon-container {
   width: 60%;
@@ -182,6 +178,7 @@ font-size: 8rem;
 .fa-linkedin {
 font-size: 8rem;
 }
+
 @keyframes gradientAnimation {
   0% {
     background: linear-gradient(45deg, #ff8a00, #e52e71, #667eea);
