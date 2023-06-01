@@ -50,10 +50,10 @@ body {
 .toggle-inner {
   display: block;
   position: absolute;
-  top: .2rem;
+  top: .1rem;
   left: 2px;
   width: 4rem;
-  height: 3.7rem;
+  height: 3.8rem;
   border-radius: 50%;
   background-color: #fff;
   transition: transform 0.3s;
@@ -161,6 +161,59 @@ h3 {
   border-radius: 2.5rem;
 }
 
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(6.25rem);
+  }
+  50% {
+    opacity: 0.25;
+    transform: translateY(3rem);
+  }
+  75% {
+    opacity: 0.50;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(5rem);
+  }
+}
+
+
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+  75% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: slideIn 3s ease-in-out forwards;
+}
+
+.shake {
+  animation: shake 1s;
+}
 
 .icon-container {
   width: 60%;
@@ -174,9 +227,11 @@ h3 {
 
 .fa-github {
 font-size: 8rem;
+color: rgb(60, 60, 197);
 }
 .fa-linkedin {
 font-size: 8rem;
+color: rgb(60, 60, 197);
 }
 
 @keyframes gradientAnimation {
