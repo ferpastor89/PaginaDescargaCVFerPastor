@@ -26,7 +26,7 @@ body {
 
 .toggle-switch {
   position: fixed;
-  top: 3rem;
+  top: 2.5rem;
   right: 2.5rem;
   display: flex;
   align-items: center;
@@ -158,7 +158,7 @@ h3 {
   font-size: 2.5em;
   background-color: #4CAF50;
   color: #fff;
-  border-radius: 2.5rem;
+  border-radius: 4rem;
 }
 
 @keyframes slideIn {
@@ -179,7 +179,6 @@ h3 {
     transform: translateY(5rem);
   }
 }
-
 
 
 @keyframes shake {
@@ -234,6 +233,18 @@ font-size: 8rem;
 color: rgb(60, 60, 197);
 }
 
+#textFooter {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#textFooter p{
+  font-size: 1.2rem;
+  color:#202020;
+}
+
 @keyframes gradientAnimation {
   0% {
     background: linear-gradient(45deg, #ff8a00, #e52e71, #667eea);
@@ -245,3 +256,108 @@ color: rgb(60, 60, 197);
     background: linear-gradient(45deg,  #667eea, #ff8a00, #e52e71);
   }
 }
+
+/* Estilos para tablets 
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 60%;
+  }
+}
+
+ /*Estilos para laptops */
+@media only screen and (min-width: 1024px) {
+  .toggle-switch {
+    top: 1.5rem;
+    right: 1.3rem;
+  }
+  .toggle-label {
+    width: 5rem;
+    height: 2.5rem;
+  }
+  .toggle-inner {
+    top: 0;
+    left: 1px;
+    width: 2.5rem;
+    height: 2.47rem;
+  }
+  .toggle-switch-text {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+  }
+  .toggle-text-on {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  .toggle-text-off {
+    font-size: 1rem;
+    margin-left: .5rem;
+  }
+  .toggle-input:checked + .toggle-label .toggle-inner {
+    transform: translateX(42px);
+  }
+  .container {
+    width: 70%;
+    height: 35%;
+    margin-top: 7%;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    }
+
+  .btnDescargaCv {
+    max-height: 5vh;
+    margin-top: 0rem;
+    margin-bottom: 15vh;
+  }
+  #downloadBtn {
+    width: 19%;
+    margin-top: 6%;
+    padding: 1.8rem .7rem;
+    font-size: 1.5rem;
+    border-top: #4CAF50;
+    border-left: #4CAF50;
+    border-bottom: #4CAF50;
+    border-right: #4CAF50;
+    border-radius: 3.2rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    transition: box-shadow .3s ease;
+  }
+  #downloadBtn:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  }
+  #downloadBtn:hover {
+    width: 19.5%;
+    background-color: #4aa047;
+    font-size: 1.55rem;
+    cursor: pointer;
+  }
+  .icon-container {
+    width: 60%;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .fa-github {
+    font-size: 3rem;
+    cursor: pointer;
+    }
+    .fa-linkedin {
+    font-size: 3rem;
+    cursor: pointer;
+    }
+    .fa-github:hover {
+      font-size: 3.5rem;
+      }
+      .fa-linkedin:hover {
+      font-size: 3.5rem;
+      }
+    
+}
+
+
