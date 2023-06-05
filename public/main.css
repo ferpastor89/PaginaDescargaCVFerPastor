@@ -17,11 +17,33 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background: linear-gradient(45deg, #ff8a00, #e52e71, #667eea);
   background-size: 400% 400%;
   animation: gradientAnimation 10s ease infinite;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: antiquewhite;
+  background: linear-gradient(to right,#5d66e7,#ce41a3 ,#4751db,#7252ff, orange);
+  background: -webkit-linear-gradient(to right,#5d66e7,#ce41a3 , #4751db, #7252ff, orange);
+  background: -moz-linear-gradient(to right, #5d66e7,#ce41a3 , #4751db, #7252ff, orange);
+  background: -o-linear-gradient(to right,#5d66e7,#ce41a3 , #4751db, #7252ff, orange);
+  background: -ms-linear-gradient(to right,#5d66e7, #ce41a3, #4751db, #7252ff, orange);
+  background-size: 800% 800%;
+  -webkit-animation: gradient 40s ease infinite;
+  -moz-animation: gradient 40s ease infinite;
+  -o-animation: gradient 40s ease infinite;
+  -ms-animation: gradient 40s ease infinite;
+  animation: gradient 40s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .toggle-switch {
@@ -138,7 +160,7 @@ h3 {
   font-size: .8rem;
   font-family: "MontserratMedium";
   margin-bottom: 1rem;
-  color: black;
+  color: #202020;
 }
 
 .btnDescargaCv {
@@ -152,7 +174,7 @@ h3 {
 }
 
 #downloadBtn {
-  width: 45%;
+  width: 28rem;
   margin-top: 6%;
   padding: 3rem 3rem;
   font-size: 2.5em;
@@ -199,7 +221,6 @@ h3 {
   }
 }
 
-
 .hidden {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -245,22 +266,14 @@ color: rgb(60, 60, 197);
   color:#202020;
 }
 
-@keyframes gradientAnimation {
-  0% {
-    background: linear-gradient(45deg, #ff8a00, #e52e71, #667eea);
+/*Estilos para tablets*/
+@media only screen and (min-width: 768px ) {
+  #downloadBtn {
+    width: 30rem;
+    padding: 2.7rem 2rem;
   }
-  50% {
-    background: linear-gradient(45deg, #667eea, #ff8a00, #e52e71);
-  }
-  100% {
-    background: linear-gradient(45deg,  #667eea, #ff8a00, #e52e71);
-  }
-}
-
-/* Estilos para tablets 
-@media only screen and (min-width: 768px) {
-  .container {
-    width: 60%;
+  .fa-github {
+    
   }
 }
 
@@ -313,9 +326,9 @@ color: rgb(60, 60, 197);
     margin-bottom: 15vh;
   }
   #downloadBtn {
-    width: 19%;
+    width: 20%;
     margin-top: 6%;
-    padding: 1.8rem .7rem;
+    padding: 1.5rem 1.5rem;
     font-size: 1.5rem;
     border-top: #4CAF50;
     border-left: #4CAF50;
@@ -329,7 +342,7 @@ color: rgb(60, 60, 197);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   }
   #downloadBtn:hover {
-    width: 19.5%;
+    transform: scale(1.1);
     background-color: #4aa047;
     font-size: 1.55rem;
     cursor: pointer;
@@ -351,13 +364,10 @@ color: rgb(60, 60, 197);
     font-size: 3rem;
     cursor: pointer;
     }
-    .fa-github:hover {
-      font-size: 3.5rem;
-      }
-      .fa-linkedin:hover {
-      font-size: 3.5rem;
-      }
-    
+    .fa-github:hover,
+    .fa-linkedin:hover  {
+    transform: scale(1.2);
+    }
 }
 
 

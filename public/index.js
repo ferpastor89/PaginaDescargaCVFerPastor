@@ -3,8 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const contentContainer = document.getElementById('contentContainer');
   const downloadBtn = document.getElementById('downloadBtn');
   const iconContainer = document.querySelector('.icon-container p');
-  let currentLanguage = 'es';
+  let currentLanguage = localStorage.getItem('language') || 'es';
   let esContent;
+  toggleSwitch.checked = currentLanguage === 'en';
 
   toggleSwitch.addEventListener('change', () => {
     currentLanguage = toggleSwitch.checked ? 'en' : 'es';
@@ -60,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(showDownloadBtn, 2000);
   };
 
-  // Agregar la lógica para reemplazar el texto del pie de página
+  // Agregar la lógica para reemplazar el texto del footer
   const textFooterP = document.getElementById('textFooterP');
   const languageContentFooter = {
     en: "© 2023 Fer Pastor Dev. All rights reserved."
@@ -80,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // Renderizar contenido inicial en español y actualizar el texto del pie de página
+  // Renderizar contenido inicial en español y actualizar el texto del footer
   renderContent();
   updateFooterText();
 
