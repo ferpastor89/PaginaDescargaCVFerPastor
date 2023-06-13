@@ -1,3 +1,115 @@
+/* Reset */
+:root {
+  --negro: #393939;
+  /* Tipografía */
+  --tipo-principal: Helvetica, Arial, sans-serif;
+  --tipo-secundaria: Verdana;
+}
+
+/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+  }
+}
+
+/* Evitamos problemas con las imagenes */
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* opcional */
+  -o-object-fit: cover;
+  object-fit: cover;
+  /* opcional */
+  -o-object-position: center center;
+  object-position: center center;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form, input, textarea, select, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+          appearance: none;
+}
+
+/* Reseteamos las tablas */
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+}
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--negro);
+  line-height: 1.4em;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
 @font-face{
   font-family:"headingNowTitular";
   src: url(./headingNowFonts/HeadingNowTrial-25Medium.ttf) format('truetype');
@@ -17,7 +129,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-size: 400% 400%;
+  background-size: 800% 800%;
   animation: gradientAnimation 10s ease infinite;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: antiquewhite;
@@ -48,8 +160,8 @@ body {
 
 .toggle-switch {
   position: fixed;
-  top: 2.5rem;
-  right: 2.5rem;
+  top: 1rem;
+  right: 1rem;
   display: flex;
   align-items: center;
 }
@@ -61,21 +173,21 @@ body {
 .toggle-label {
   display: block;
   position: relative;
-  width: 8rem;
-  height: 4rem;
+  width: 4rem;
+  height: 2rem;
   cursor: pointer;
   background-color: #ccc;
-  border-radius: 3.5rem;
+  border-radius: 3rem;
   transition: background-color 0.3s;
 }
 
 .toggle-inner {
   display: block;
   position: absolute;
-  top: .1rem;
-  left: 2px;
-  width: 4rem;
-  height: 3.8rem;
+  top: 0rem;
+  left: 1px;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   background-color: #fff;
   transition: transform 0.3s;
@@ -85,22 +197,22 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 8px;
+  left: 1px;
   display: flex;
 }
 
 .toggle-text-off,
 .toggle-text-on {
   color: #000;
-  font-size: 1.5rem;
+  font-size: .7rem;
   font-weight: bold;
   transition: opacity 0.3s;
   opacity: 1;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 
 .toggle-text-off {
-  margin-left: .8rem;
+  margin-left: .5rem;
   color:#4caf50;
   font-weight: bold;
 }
@@ -110,7 +222,7 @@ body {
 }
 
 .toggle-input:checked + .toggle-label .toggle-inner {
-  transform: translateX(65px);
+  transform: translateX(31px);
 }
 
 .toggle-input:checked + .toggle-label .toggle-text-off {
@@ -126,11 +238,12 @@ body {
 }
 
 .container {
+  max-width: 1024px;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  padding: 2rem;
+  padding-top: 1rem;
   border-radius: 1.5rem;
   width: 85%;
   margin: auto;
@@ -144,22 +257,27 @@ body {
 h1 {
   text-transform: uppercase;
   font-family: "headingNowTitular";
-  font-size: 6.5em;
-  letter-spacing: 5px;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  line-height: 3.5rem;
   color: #202020;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 h2 {
   font-family: "MontserratMedium";
-  font-size: 2.5rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  padding-left: .5rem;
+  padding-right:.5rem ;
 }
 
 h3 {
   font-size: .8rem;
   font-family: "MontserratMedium";
-  margin-bottom: 1rem;
   color: #202020;
 }
 
@@ -168,19 +286,23 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 20vh;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-}
+  margin-top: 2.5rem;
+  }
 
 #downloadBtn {
-  width: 28rem;
-  margin-top: 6%;
-  padding: 3rem 3rem;
-  font-size: 2.5em;
+  text-transform: uppercase;
+  width: 60%;
+  padding: 1.5rem 1rem;
+  font-size: 1rem;
   background-color: #4CAF50;
   color: #fff;
   border-radius: 4rem;
+  border-top: #4CAF50;
+    border-left: #4CAF50;
+    border-bottom: #4CAF50;
+    border-right: #4CAF50;
+    border-radius: 3.2rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 @keyframes slideIn {
@@ -201,7 +323,6 @@ h3 {
     transform: translateY(5rem);
   }
 }
-
 
 @keyframes shake {
   0% {
@@ -236,49 +357,76 @@ h3 {
 }
 
 .icon-container {
-  width: 60%;
   margin: auto;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .fa-github {
-font-size: 8rem;
+font-size: 3rem;
 color: rgb(60, 60, 197);
 }
 .fa-linkedin {
-font-size: 8rem;
+font-size: 3rem;
 color: rgb(60, 60, 197);
 }
 
 #textFooter {
-  margin-top: 5rem;
+  margin-top: 2em;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 #textFooter p{
-  font-size: 1.2rem;
+  font-size: .7rem;
   color:#202020;
 }
 
+/*Estilos para modo landscape*/
+@media screen and (orientation: landscape) {
+.container {
+  width: 90%;
+  margin-top: 5rem;
+}
+}
+
 /*Estilos para tablets*/
-@media only screen and (min-width: 768px ) {
+@media screen and (min-width:601px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
   #downloadBtn {
-    width: 30rem;
-    padding: 2.7rem 2rem;
+    width: 40%;
+    padding: 2rem 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+  }
+  .icon-container{
+    gap: 2.5rem;
   }
   .fa-github {
-    
+    font-size: 4rem;
+  }
+  .fa-linkedin {
+    font-size: 4rem;
+  }
+}
+/*Estilos tablet landscape*/
+@media screen and (min-width:601)and (max-width:1024) and (orientation: landscape){
+  h1 {
+    color: red;
   }
 }
 
  /*Estilos para laptops */
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px){
   .toggle-switch {
     top: 1.5rem;
     right: 1.3rem;
@@ -310,32 +458,31 @@ color: rgb(60, 60, 197);
     transform: translateX(42px);
   }
   .container {
-    width: 70%;
-    height: 35%;
     margin-top: 7%;
-    margin-bottom: 0;
+    margin-bottom: 2.5rem;
   }
-
+  h1 {
+    font-size: 8rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  h2 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
   h3 {
     font-size: 1.2rem;
+    padding-bottom: 2rem;
     }
 
   .btnDescargaCv {
-    max-height: 5vh;
     margin-top: 0rem;
-    margin-bottom: 15vh;
+    
   }
   #downloadBtn {
     width: 20%;
-    margin-top: 6%;
     padding: 1.5rem 1.5rem;
-    font-size: 1.5rem;
-    border-top: #4CAF50;
-    border-left: #4CAF50;
-    border-bottom: #4CAF50;
-    border-right: #4CAF50;
-    border-radius: 3.2rem;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
     transition: box-shadow .3s ease;
   }
   #downloadBtn:active {
@@ -344,9 +491,10 @@ color: rgb(60, 60, 197);
   #downloadBtn:hover {
     transform: scale(1.1);
     background-color: #4aa047;
-    font-size: 1.55rem;
+    font-size: 1rem;
     cursor: pointer;
   }
+  
   .icon-container {
     width: 60%;
     margin-bottom: 5vh;

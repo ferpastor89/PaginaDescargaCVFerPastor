@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggleSwitch = document.getElementById('switch');
   const contentContainer = document.getElementById('contentContainer');
   const downloadBtn = document.getElementById('downloadBtn');
-  const iconContainer = document.querySelector('.icon-container p');
+  const iconContainer = document.querySelector('.icon-container');
   let currentLanguage = localStorage.getItem('language') || 'es';
   let esContent;
   toggleSwitch.checked = currentLanguage === 'en';
