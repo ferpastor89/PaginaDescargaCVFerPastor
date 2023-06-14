@@ -1,6 +1,6 @@
 # PaginaDescargaCVFerPastor
 
-![Imagen del proyecto] (https://github.com/ferpastor89/PaginaDescargaCVFerPastor/blob/master/Captura%20de%20pantalla%20(35).png
+![Imagen del proyecto](https://github.com/ferpastor89/PaginaDescargaCVFerPastor/blob/master/Captura%20de%20pantalla%20(35).png)
 
 ## Ejemplo en vivo
 - https://ferdownloadcv.web.app/index.html
