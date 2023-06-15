@@ -29,7 +29,7 @@ Si querés conocer un poco el proyecto, acá te dejo unas snapshots del mismo:
 
 ##### Mobile version
 
-![Captura del proyecto]
+![Captura del proyecto](https://github.com/ferpastor89/PaginaDescargaCVFerPastor/blob/master/downloadCvFerPastorCel.png)
 
 
 
