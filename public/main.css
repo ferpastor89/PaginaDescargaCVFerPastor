@@ -238,7 +238,7 @@ body {
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 64rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -298,11 +298,11 @@ h3 {
   color: #fff;
   border-radius: 4rem;
   border-top: #4CAF50;
-    border-left: #4CAF50;
-    border-bottom: #4CAF50;
-    border-right: #4CAF50;
-    border-radius: 3.2rem;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+  border-left: #4CAF50;
+  border-bottom: #4CAF50;
+  border-right: #4CAF50;
+  border-radius: 3.2rem;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 @keyframes slideIn {
@@ -416,12 +416,6 @@ color: rgb(60, 60, 197);
   }
   .fa-linkedin {
     font-size: 4rem;
-  }
-}
-/*Estilos tablet landscape*/
-@media screen and (min-width:601)and (max-width:1024) and (orientation:landscape){
-  h1 {
-    color: red;
   }
 }
 
