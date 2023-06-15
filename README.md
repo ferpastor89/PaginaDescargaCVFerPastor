@@ -10,6 +10,7 @@
 Esta landing page fue realizada para tener ambos cv´s (Español/Inglés) en la web, para su posterior descarga.
 Es una página simple, con un call to action para dicha descarga, y abajo de éste botón se encuentran los íconos de mi repositorio de Github y de mi perfíl de LinkedIn.
 Por defecto el idioma de la página es Español, pero presionando un toogle switch se accede a la versión en Inglés, en la cuál el Cv que se descarga está en dicho idioma.
+El background de la página posee una animación de un gradiente de colores que van fusionándose y moviéndose de manera infinita.
 
 
 
@@ -29,7 +30,7 @@ Si querés conocer un poco el proyecto, acá te dejo unas snapshots del mismo:
 
 ##### Desktopversion
 
-![Captura del proyecto]
+![Captura del proyecto] (https://github.com/ferpastor89/PaginaDescargaCVFerPastor/blob/master/Captura%20de%20pantalla%20(36).png)
 
 ##### Mobile version
 
