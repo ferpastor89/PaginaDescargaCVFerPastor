@@ -42,8 +42,8 @@ Si querés conocer un poco el proyecto, acá te dejo unas snapshots del mismo:
 ## Autor ✒️
 **FERNANDO PASTOR**
 
-* [![GMAIL](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white) fernandoandres.pastor@gmail.com
-* [![LINKEDIN](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white) https://www.linkedin.com/in/ferpastordev/
+* ![GMAIL](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white) fernandoandres.pastor@gmail.com
+* ![LINKEDIN](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white) https://www.linkedin.com/in/ferpastordev/
 
 
 
