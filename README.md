@@ -26,21 +26,12 @@ No importa el tamaño de la página, ni su funcionalidad, mientras más estemos 
 
 ## Vista previa del proyecto
 Si querés conocer un poco el proyecto, acá te dejo unas snapshots del mismo:
-##### Desktop version
-
-![Captura del proyecto](https://github.com/ferpastor89/Syunik/blob/master/Syunik-2.png?raw=true)
-
-
-![Captura del proyecto](https://github.com/ferpastor89/Syunik/blob/master/Syunik-3.png?raw=true)
-
-
-![Captura del proyecto](https://github.com/ferpastor89/Syunik/blob/master/Syunik-5.png?raw=true)
 
 ##### Mobile version
 
-![Captura del proyecto](https://github.com/ferpastor89/Syunik/blob/master/viewport-cel-1.png?raw=true)
+![Captura del proyecto]
 
-![Captura del proyecto](https://github.com/ferpastor89/Syunik/blob/master/viewport-cel-2.png?raw=true)
+
 
 
 ## Autor ✒️
