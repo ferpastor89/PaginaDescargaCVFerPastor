@@ -30,7 +30,7 @@ Si querés conocer un poco el proyecto, acá te dejo unas snapshots del mismo:
 
 ##### Desktopversion
 
-![Captura del proyecto] (https://github.com/ferpastor89/PaginaDescargaCVFerPastor/blob/master/Captura%20de%20pantalla%20(36).png)
+![Captura del proyecto](https://github.com/ferpastor89/PaginaDescargaCVFerPastor/blob/master/Captura%20de%20pantalla%20(36).png)
 
 ##### Mobile version
 
