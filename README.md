@@ -27,6 +27,10 @@ No importa el tamaño de la página, ni su funcionalidad, mientras más estemos 
 ## Vista previa del proyecto
 Si querés conocer un poco el proyecto, acá te dejo unas snapshots del mismo:
 
+##### Desktopversion
+
+![Captura del proyecto]
+
 ##### Mobile version
 
 ![Captura del proyecto](https://github.com/ferpastor89/PaginaDescargaCVFerPastor/blob/master/downloadCvFerPastorCel.png)
